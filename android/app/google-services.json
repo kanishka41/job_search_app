@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "592385901632",
+    "project_id": "nexthire-f794f",
+    "storage_bucket": "nexthire-f794f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:592385901632:android:d92775e2a7f42895180ba5",
+        "android_client_info": {
+          "package_name": "com.example.job_search_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "592385901632-kpch1ri3bpjj4pu4a4kfhif22hkir2dn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.job_search_app",
+            "certificate_hash": "03cf3da05890ac52528be4e8a55df47316f0ae70"
+          }
+        },
+        {
+          "client_id": "592385901632-p9p308n5bc0m7i3t4s7bdneqd37assds.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCtvvGd6qhJhR8DmRYzw9HFIO5NRtP0v6g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "592385901632-p9p308n5bc0m7i3t4s7bdneqd37assds.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "592385901632-0k9nqf4b7a6epq5dj3qlt9bt3bnk5frj.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.job_search_app"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
