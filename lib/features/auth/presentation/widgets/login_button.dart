@@ -1,5 +1,6 @@
+import 'package:NextHire/constants/dimensions.dart';
 import 'package:flutter/material.dart';
-import 'package:job_search_app/constants/dimensions.dart';
+
 
 class LoginButton extends StatelessWidget {
   const LoginButton({

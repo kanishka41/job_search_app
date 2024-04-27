@@ -1,13 +1,14 @@
+
 import 'package:flutter/material.dart';
-import 'package:job_search_app/constants/named_routes.dart';
-import 'package:job_search_app/features/auth/presentation/screens/forgot_password.dart';
-import 'package:job_search_app/features/auth/presentation/screens/login_screen.dart';
-import 'package:job_search_app/features/auth/presentation/screens/register_screen.dart';
-import 'package:job_search_app/features/auth/presentation/screens/reset_password.dart';
-import 'package:job_search_app/features/home/home_screen.dart';
-import 'package:job_search_app/utils/splash_screen.dart';
-import 'package:job_search_app/utils/success_screen.dart';
-import 'package:job_search_app/features/auth/presentation/screens/verify_code.dart';
+import 'package:NextHire/constants/named_routes.dart';
+import 'package:NextHire/features/auth/presentation/screens/forgot_password.dart';
+import 'package:NextHire/features/auth/presentation/screens/login_screen.dart';
+import 'package:NextHire/features/auth/presentation/screens/register_screen.dart';
+import 'package:NextHire/features/auth/presentation/screens/reset_password.dart';
+import 'package:NextHire/features/home/home_screen.dart';
+import 'package:NextHire/utils/splash_screen.dart';
+import 'package:NextHire/utils/success_screen.dart';
+import 'package:NextHire/features/auth/presentation/screens/verify_code.dart';
 
 class AppRoutes {
   AppRoutes._();

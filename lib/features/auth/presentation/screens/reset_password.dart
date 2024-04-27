@@ -1,12 +1,12 @@
+import 'package:NextHire/constants/assets_location.dart';
+import 'package:NextHire/constants/strings.dart';
+import 'package:NextHire/features/auth/data/controllers/validation.dart';
+import 'package:NextHire/features/auth/presentation/widgets/login_button.dart';
+import 'package:NextHire/features/auth/presentation/widgets/text_fields.dart';
+import 'package:NextHire/features/widgets/vetical_space.dart';
+import 'package:NextHire/themes/font_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:job_search_app/features/auth/presentation/widgets/login_button.dart';
-import 'package:job_search_app/features/auth/presentation/widgets/text_fields.dart';
-import 'package:job_search_app/features/widgets/vetical_space.dart';
-import 'package:job_search_app/constants/assets_location.dart';
-import 'package:job_search_app/themes/font_styles.dart';
-import 'package:job_search_app/constants/strings.dart';
-import 'package:job_search_app/features/auth/data/controllers/validation.dart';
 
 class ResetPassword extends StatelessWidget {
   ResetPassword({super.key});

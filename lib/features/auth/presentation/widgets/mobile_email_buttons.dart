@@ -1,11 +1,12 @@
+import 'package:NextHire/constants/assets_location.dart';
+import 'package:NextHire/constants/dimensions.dart';
+import 'package:NextHire/constants/strings.dart';
+import 'package:NextHire/features/auth/data/controllers/validation.dart';
+import 'package:NextHire/features/auth/presentation/widgets/text_fields.dart';
+import 'package:NextHire/themes/color_styles.dart';
 import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
-import 'package:job_search_app/constants/strings.dart';
-import 'package:job_search_app/themes/color_styles.dart';
-import 'package:job_search_app/constants/dimensions.dart';
-import 'package:job_search_app/constants/assets_location.dart';
-import 'package:job_search_app/features/auth/presentation/widgets/text_fields.dart';
-import 'package:job_search_app/features/auth/data/controllers/validation.dart';
+
 
 class PassMailButton extends StatefulWidget {
   const PassMailButton({super.key, required this.resetController});

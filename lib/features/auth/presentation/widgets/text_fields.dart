@@ -1,9 +1,10 @@
+import 'package:NextHire/constants/dimensions.dart';
+import 'package:NextHire/features/auth/data/controllers/auth_functions.dart';
+import 'package:NextHire/features/auth/data/controllers/validation.dart';
+import 'package:NextHire/themes/color_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:job_search_app/features/auth/data/controllers/auth_functions.dart';
-import 'package:job_search_app/themes/color_styles.dart';
-import 'package:job_search_app/constants/dimensions.dart';
-import 'package:job_search_app/features/auth/data/controllers/validation.dart';
+
 
 class CustomTextField extends StatefulWidget {
   const CustomTextField({

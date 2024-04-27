@@ -1,7 +1,8 @@
+import 'package:NextHire/features/saved_jobs_screen.dart';
+import 'package:NextHire/features/widgets/job_details_card.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:job_search_app/features/saved_jobs_screen.dart';
-import 'package:job_search_app/features/widgets/job_details_card.dart';
+
 
 import '../features/home/home_screen.dart';
 import '../features/messages/messages_screen.dart';

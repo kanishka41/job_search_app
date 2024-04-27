@@ -1,4 +1,5 @@
-import 'package:job_search_app/constants/strings.dart';
+import 'package:NextHire/constants/strings.dart';
+
 
 abstract class AppTranslation {
   AppTranslation._();

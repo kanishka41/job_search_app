@@ -1,15 +1,16 @@
 import 'dart:math';
+import 'package:NextHire/constants/assets_location.dart';
+import 'package:NextHire/constants/dimensions.dart';
+import 'package:NextHire/controllers/controller.dart';
+import 'package:NextHire/features/widgets/horizontal_space.dart';
+import 'package:NextHire/features/widgets/vetical_space.dart';
+import 'package:NextHire/modals/data/data_model.dart';
+import 'package:NextHire/themes/color_styles.dart';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:get/get.dart';
-import 'package:job_search_app/constants/assets_location.dart';
-import 'package:job_search_app/constants/dimensions.dart';
-import 'package:job_search_app/controllers/controller.dart';
-import 'package:job_search_app/features/widgets/horizontal_space.dart';
-import 'package:job_search_app/features/widgets/vetical_space.dart';
-import 'package:job_search_app/modals/data/data_model.dart';
-import 'package:job_search_app/themes/color_styles.dart';
+
 import 'package:url_launcher/url_launcher.dart';
 
 import '../atom/pill.dart';

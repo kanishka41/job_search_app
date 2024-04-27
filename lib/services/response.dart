@@ -1,7 +1,8 @@
 import 'dart:convert';
-import 'package:job_search_app/constants/data_location.dart';
+import 'package:NextHire/constants/data_location.dart';
+
 import 'package:http/http.dart' as http;
-import 'package:job_search_app/services/request.dart';
+import 'package:NextHire/services/request.dart';
 
 class ResponseService {
   ResponseService._();

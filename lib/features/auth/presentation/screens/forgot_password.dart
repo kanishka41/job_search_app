@@ -1,17 +1,18 @@
+import 'package:NextHire/constants/assets_location.dart';
+import 'package:NextHire/constants/dimensions.dart';
+import 'package:NextHire/constants/named_routes.dart';
+import 'package:NextHire/constants/strings.dart';
+import 'package:NextHire/features/auth/data/controllers/validation.dart';
+import 'package:NextHire/features/auth/presentation/widgets/login_button.dart';
+import 'package:NextHire/features/auth/presentation/widgets/text_fields.dart';
+import 'package:NextHire/features/widgets/custom_progress_indicator.dart';
+import 'package:NextHire/features/widgets/vetical_space.dart';
+import 'package:NextHire/themes/color_styles.dart';
+import 'package:NextHire/themes/font_styles.dart';
+import 'package:country_picker/country_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:job_search_app/constants/named_routes.dart';
-import 'package:job_search_app/features/widgets/custom_progress_indicator.dart';
-import 'package:job_search_app/features/auth/presentation/widgets/login_button.dart';
-import 'package:job_search_app/features/widgets/vetical_space.dart';
-import 'package:job_search_app/constants/assets_location.dart';
-import 'package:job_search_app/themes/color_styles.dart';
-import 'package:job_search_app/constants/dimensions.dart';
-import 'package:job_search_app/themes/font_styles.dart';
-import 'package:country_picker/country_picker.dart';
-import 'package:job_search_app/features/auth/presentation/widgets/text_fields.dart';
-import 'package:job_search_app/constants/strings.dart';
-import 'package:job_search_app/features/auth/data/controllers/validation.dart';
+
 import '../../data/controllers/auth_functions.dart';
 
 class ForgotPassword extends StatefulWidget {

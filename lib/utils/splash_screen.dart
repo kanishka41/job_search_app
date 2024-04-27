@@ -1,9 +1,10 @@
+import 'package:NextHire/constants/dimensions.dart';
+import 'package:NextHire/constants/named_routes.dart';
+import 'package:NextHire/themes/color_styles.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:job_search_app/constants/dimensions.dart';
-import 'package:job_search_app/constants/named_routes.dart';
-import 'package:job_search_app/themes/color_styles.dart';
+
 
 import '../constants/route_functions.dart';
 

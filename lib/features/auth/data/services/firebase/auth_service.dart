@@ -1,8 +1,9 @@
+import 'package:NextHire/constants/named_routes.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_facebook_auth/flutter_facebook_auth.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:job_search_app/constants/named_routes.dart';
+
 
 class AuthService {
   Future<String?> registration({

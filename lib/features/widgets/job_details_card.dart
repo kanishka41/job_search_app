@@ -1,14 +1,15 @@
+import 'package:NextHire/constants/dimensions.dart';
+import 'package:NextHire/constants/named_routes.dart';
+import 'package:NextHire/controllers/controller.dart';
+import 'package:NextHire/controllers/data_controller.dart';
+import 'package:NextHire/features/widgets/custom_progress_indicator.dart';
+import 'package:NextHire/features/widgets/jobs_card.dart';
+import 'package:NextHire/themes/color_styles.dart';
+import 'package:NextHire/themes/font_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
-import 'package:job_search_app/constants/dimensions.dart';
-import 'package:job_search_app/constants/named_routes.dart';
-import 'package:job_search_app/controllers/controller.dart';
-import 'package:job_search_app/controllers/data_controller.dart';
-import 'package:job_search_app/features/widgets/custom_progress_indicator.dart';
-import 'package:job_search_app/features/widgets/jobs_card.dart';
-import 'package:job_search_app/themes/color_styles.dart';
-import 'package:job_search_app/themes/font_styles.dart';
+
 
 class JobDetailsCard extends StatelessWidget {
   const JobDetailsCard({super.key});

@@ -1,10 +1,15 @@
+import 'package:NextHire/constants/dimensions.dart';
+import 'package:NextHire/constants/strings.dart';
+import 'package:NextHire/features/auth/data/controllers/auth_functions.dart';
+import 'package:NextHire/features/auth/presentation/widgets/login_button.dart';
+import 'package:NextHire/features/widgets/vetical_space.dart';
+import 'package:NextHire/themes/font_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:job_search_app/constants/dimensions.dart';
-import 'package:job_search_app/features/auth/data/controllers/auth_functions.dart';
-import 'package:job_search_app/features/auth/presentation/widgets/login_button.dart';
-import 'package:job_search_app/features/widgets/vetical_space.dart';
-import 'package:job_search_app/themes/font_styles.dart';
-import 'package:job_search_app/constants/strings.dart';
+
+
+
+
+
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen({super.key});

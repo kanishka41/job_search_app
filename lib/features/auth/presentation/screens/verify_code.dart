@@ -1,11 +1,13 @@
+import 'package:NextHire/constants/strings.dart';
+import 'package:NextHire/features/auth/data/controllers/auth_functions.dart';
+import 'package:NextHire/features/widgets/otp_button.dart';
+import 'package:NextHire/features/widgets/svg_banner.dart';
+import 'package:NextHire/themes/font_styles.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:job_search_app/features/auth/data/controllers/auth_functions.dart';
-import 'package:job_search_app/features/auth/presentation/widgets/login_button.dart';
-import 'package:job_search_app/features/widgets/otp_button.dart';
-import 'package:job_search_app/features/widgets/svg_banner.dart';
-import 'package:job_search_app/themes/font_styles.dart';
-import 'package:job_search_app/constants/strings.dart';
+
+
+import '../widgets/login_button.dart';
 
 class VerifyCode extends StatefulWidget {
   const VerifyCode({super.key});

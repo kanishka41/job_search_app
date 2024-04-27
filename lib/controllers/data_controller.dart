@@ -1,6 +1,8 @@
+import 'package:NextHire/modals/data/data_model.dart';
+import 'package:NextHire/modals/repo/repo.dart';
 import 'package:get/get.dart';
-import 'package:job_search_app/modals/data/data_model.dart';
-import 'package:job_search_app/modals/repo/repo.dart';
+
+
 
 class DataController extends GetxController {
   final Rx<List<DataModel>> _jobsData =

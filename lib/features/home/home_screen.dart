@@ -1,18 +1,19 @@
+import 'package:NextHire/constants/assets_location.dart';
+import 'package:NextHire/constants/dimensions.dart';
+import 'package:NextHire/constants/strings.dart';
+import 'package:NextHire/features/auth/data/controllers/auth_functions.dart';
+import 'package:NextHire/features/widgets/display_card.dart';
+import 'package:NextHire/features/widgets/featured_jobs_tile.dart';
+import 'package:NextHire/features/widgets/horizontal_space.dart';
+import 'package:NextHire/features/widgets/popular_jobs_card.dart';
+import 'package:NextHire/features/widgets/profile_header.dart';
+import 'package:NextHire/features/widgets/search_job.dart';
+import 'package:NextHire/features/widgets/vetical_space.dart';
+import 'package:NextHire/themes/color_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
 import 'package:get/get.dart';
-import 'package:job_search_app/constants/assets_location.dart';
-import 'package:job_search_app/constants/dimensions.dart';
-import 'package:job_search_app/constants/strings.dart';
-import 'package:job_search_app/features/auth/data/controllers/auth_functions.dart';
-import 'package:job_search_app/features/widgets/featured_jobs_tile.dart';
-import 'package:job_search_app/features/widgets/display_card.dart';
-import 'package:job_search_app/features/widgets/horizontal_space.dart';
-import 'package:job_search_app/features/widgets/popular_jobs_card.dart';
-import 'package:job_search_app/features/widgets/profile_header.dart';
-import 'package:job_search_app/features/widgets/search_job.dart';
-import 'package:job_search_app/features/widgets/vetical_space.dart';
-import 'package:job_search_app/themes/color_styles.dart';
+
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({Key? key}) : super(key: key);

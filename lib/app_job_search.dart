@@ -1,9 +1,10 @@
+import 'package:NextHire/constants/get_app_routes.dart';
+import 'package:NextHire/constants/strings.dart';
+import 'package:NextHire/themes/color_styles.dart';
+import 'package:NextHire/themes/font_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:job_search_app/constants/get_app_routes.dart';
-import 'package:job_search_app/constants/strings.dart';
-import 'package:job_search_app/themes/color_styles.dart';
-import 'package:job_search_app/themes/font_styles.dart';
+
 
 import 'app_translation.dart';
 import 'constants/named_routes.dart';

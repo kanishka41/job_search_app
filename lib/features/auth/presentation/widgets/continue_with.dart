@@ -1,11 +1,12 @@
+import 'package:NextHire/constants/assets_location.dart';
+import 'package:NextHire/constants/dimensions.dart';
+import 'package:NextHire/constants/named_routes.dart';
+import 'package:NextHire/features/auth/data/services/firebase/auth_service.dart';
+import 'package:NextHire/features/widgets/failure_snack_bar.dart';
+import 'package:NextHire/themes/font_styles.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:job_search_app/constants/named_routes.dart';
-import 'package:job_search_app/features/auth/data/services/firebase/auth_service.dart';
-import 'package:job_search_app/constants/dimensions.dart';
-import 'package:job_search_app/features/widgets/failure_snack_bar.dart';
-import 'package:job_search_app/themes/font_styles.dart';
-import 'package:job_search_app/constants/assets_location.dart';
+
 
 class ContinueWithOtherAccounts extends StatelessWidget {
   const ContinueWithOtherAccounts({super.key, required this.isLogin});
@@ -31,7 +32,7 @@ class ContinueWithOtherAccounts extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        // It creates continue with text with dividers
+        
         Row(
           children: [
             const Expanded(
@@ -76,7 +77,6 @@ class ContinueWithOtherAccounts extends StatelessWidget {
               ),
             ),
 
-            // SvgPicture.asset(Assets.facebookSvg),
           ],
         ),
 

@@ -1,5 +1,5 @@
-import 'package:job_search_app/modals/data/data_model.dart';
-import 'package:job_search_app/services/response.dart';
+import 'package:NextHire/modals/data/data_model.dart';
+import 'package:NextHire/services/response.dart';
 
 class Repo {
   Repo._();

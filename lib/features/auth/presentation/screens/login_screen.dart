@@ -1,17 +1,18 @@
+import 'package:NextHire/constants/assets_location.dart';
+import 'package:NextHire/constants/dimensions.dart';
+import 'package:NextHire/constants/named_routes.dart';
+import 'package:NextHire/constants/strings.dart';
+import 'package:NextHire/features/auth/data/controllers/auth_functions.dart';
+import 'package:NextHire/features/auth/data/controllers/validation.dart';
+import 'package:NextHire/features/auth/presentation/widgets/continue_with.dart';
+import 'package:NextHire/features/auth/presentation/widgets/login_button.dart';
+import 'package:NextHire/features/auth/presentation/widgets/text_fields.dart';
+import 'package:NextHire/features/widgets/vetical_space.dart';
+import 'package:NextHire/features/widgets/welcome_text.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
-import 'package:job_search_app/constants/named_routes.dart';
-import 'package:job_search_app/features/auth/data/controllers/auth_functions.dart';
-import 'package:job_search_app/features/auth/presentation/widgets/continue_with.dart';
-import 'package:job_search_app/features/auth/presentation/widgets/login_button.dart';
-import 'package:job_search_app/features/auth/presentation/widgets/text_fields.dart';
-import 'package:job_search_app/features/widgets/vetical_space.dart';
-import 'package:job_search_app/features/widgets/welcome_text.dart';
-import 'package:job_search_app/constants/assets_location.dart';
-import 'package:job_search_app/constants/dimensions.dart';
-import 'package:job_search_app/constants/strings.dart';
-import 'package:job_search_app/features/auth/data/controllers/validation.dart';
+
 
 class LogIn extends StatefulWidget {
   const LogIn({super.key});

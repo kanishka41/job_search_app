@@ -1,6 +1,7 @@
+import 'package:NextHire/features/widgets/vetical_space.dart';
+import 'package:NextHire/themes/color_styles.dart';
 import 'package:flutter/material.dart';
-import 'package:job_search_app/features/widgets/vetical_space.dart';
-import 'package:job_search_app/themes/color_styles.dart';
+
 
 class ProfileHeader extends StatelessWidget {
   const ProfileHeader({
