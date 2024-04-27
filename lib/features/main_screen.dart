@@ -30,7 +30,7 @@ class _MainScreenState extends State<MainScreen> {
                           SvgPicture.asset(
                             Assets.navbarHome,
                             colorFilter: const ColorFilter.mode(
-                              ColorStyles.defaultMainColor,
+                              Color.fromARGB(255, 25, 40, 53),
                               BlendMode.srcIn,
                             ),
                           ),

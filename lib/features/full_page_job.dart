@@ -46,71 +46,76 @@ class FullPageJob extends StatelessWidget {
                   height: screenHeight(context) * 0.466,
                 ),
                 Center(
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: [
-                      Container(
-                        padding: const EdgeInsets.all(12),
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(50),
-                          color: ColorStyles.pureWhite,
-                        ),
-                        child: CachedNetworkImage(
-                          imageUrl: dataModel.thumbnail.toString(),
-                          progressIndicatorBuilder:
-                              (context, url, downloadProgress) =>
-                                  CircularProgressIndicator(
-                            value: downloadProgress.progress,
+                  child: Container(
+                    // Wrap the Column with a Container
+                    color: ColorStyles
+                        .defaultMainColor, // Set the background color here
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Container(
+                          padding: const EdgeInsets.all(12),
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(50),
+                            color: Color.fromARGB(255, 251, 251, 251),
                           ),
-                          errorWidget: (context, url, error) =>
-                              const Icon(Icons.error),
+                          child: CachedNetworkImage(
+                            imageUrl: dataModel.thumbnail.toString(),
+                            progressIndicatorBuilder:
+                                (context, url, downloadProgress) =>
+                                    CircularProgressIndicator(
+                              value: downloadProgress.progress,
+                            ),
+                            errorWidget: (context, url, error) =>
+                                const Icon(Icons.error),
+                          ),
                         ),
-                      ),
-                      VerticalSpace(
-                        value: scaleHeight(24, context),
-                        ctx: context,
-                      ),
-                      Text(
-                        dataModel.title.toString(),
-                        textAlign: TextAlign.center,
-                        style: const TextStyle(
-                          fontSize: 18,
-                          color: ColorStyles.pureWhite,
-                          fontWeight: FontWeight.w600,
+                        VerticalSpace(
+                          value: scaleHeight(24, context),
+                          ctx: context,
                         ),
-                      ),
-                      VerticalSpace(
-                        value: scaleHeight(8, context),
-                        ctx: context,
-                      ),
-                      Text(
-                        dataModel.companyName.toString(),
-                        style: const TextStyle(
-                          fontSize: 16,
-                          color: ColorStyles.pureWhite,
-                          fontWeight: FontWeight.w500,
+                        Text(
+                          dataModel.title.toString(),
+                          textAlign: TextAlign.center,
+                          style: const TextStyle(
+                            fontSize: 18,
+                            color: Color.fromARGB(255, 245, 246, 247),
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
-                      ),
-                      VerticalSpace(
-                        value: scaleHeight(32, context),
-                        ctx: context,
-                      ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          for (int i = 0; i < 3; i++) ...{
-                            if (i >= extensionsList.length ||
-                                extensionsList[i].toString().length > 12) ...{
-                              Pill(pillRandom[Random().nextInt(2)]),
-                              HorizontalSpace(value: 4, ctx: context),
-                            } else ...{
-                              Pill(extensionsList[i] as String),
-                              HorizontalSpace(value: 4, ctx: context),
-                            }
-                          },
-                        ],
-                      ),
-                    ],
+                        VerticalSpace(
+                          value: scaleHeight(8, context),
+                          ctx: context,
+                        ),
+                        Text(
+                          dataModel.companyName.toString(),
+                          style: const TextStyle(
+                            fontSize: 16,
+                            color: Color.fromARGB(255, 230, 232, 235),
+                            fontWeight: FontWeight.w500,
+                          ),
+                        ),
+                        VerticalSpace(
+                          value: scaleHeight(32, context),
+                          ctx: context,
+                        ),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          children: [
+                            for (int i = 0; i < 3; i++) ...{
+                              if (i >= extensionsList.length ||
+                                  extensionsList[i].toString().length > 12) ...{
+                                Pill(pillRandom[Random().nextInt(2)]),
+                                HorizontalSpace(value: 4, ctx: context),
+                              } else ...{
+                                Pill(extensionsList[i] as String),
+                                HorizontalSpace(value: 4, ctx: context),
+                              }
+                            },
+                          ],
+                        ),
+                      ],
+                    ),
                   ),
                 )
               ],

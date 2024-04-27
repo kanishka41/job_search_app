@@ -52,7 +52,7 @@ class DisplayCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   color: ColorStyles.pureWhite,
                   borderRadius: BorderRadius.circular(
-                    scaleRadius(12, context),
+                    scaleRadius(20, context),
                   ),
                 ),
                 padding: EdgeInsets.symmetric(

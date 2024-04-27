@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_advanced_drawer/flutter_advanced_drawer.dart';
 import 'package:get/get.dart';
 import 'package:job_search_app/constants/assets_location.dart';
 import 'package:job_search_app/constants/dimensions.dart';
@@ -11,21 +12,118 @@ import 'package:job_search_app/features/widgets/popular_jobs_card.dart';
 import 'package:job_search_app/features/widgets/profile_header.dart';
 import 'package:job_search_app/features/widgets/search_job.dart';
 import 'package:job_search_app/features/widgets/vetical_space.dart';
-
-import '../../themes/color_styles.dart';
+import 'package:job_search_app/themes/color_styles.dart';
 
 class HomeScreen extends StatefulWidget {
-  const HomeScreen({super.key});
+  const HomeScreen({Key? key}) : super(key: key);
 
   @override
-  State<HomeScreen> createState() => _HomeScreenState();
+  _HomeScreenState createState() => _HomeScreenState();
 }
 
-class _HomeScreenState extends State<HomeScreen> {
+class _HomeScreenState extends State with SingleTickerProviderStateMixin {
+  final _advancedDrawerController = AdvancedDrawerController();
+
   @override
   Widget build(BuildContext context) {
-    return SafeArea(
+    return AdvancedDrawer(
+      backdrop: Container(
+        width: double.infinity,
+        height: double.infinity,
+        color: const Color.fromRGBO(53, 104, 153, 1),
+      ),
+      controller: _advancedDrawerController,
+      animationCurve: Curves.easeInOut,
+      animationDuration: const Duration(milliseconds: 300),
+      animateChildDecoration: true,
+      rtlOpening: false,
+      childDecoration: const BoxDecoration(
+        borderRadius: BorderRadius.all(Radius.circular(16)),
+      ),
+      drawer: SafeArea(
+        child: Container(
+          child: ListTileTheme(
+            textColor: Colors.white,
+            iconColor: Colors.white,
+            child: Column(
+              mainAxisSize: MainAxisSize.max,
+              children: [
+                Container(
+                  width: 128.0,
+                  height: 128.0,
+                  margin: const EdgeInsets.only(
+                    top: 24.0,
+                    bottom: 64.0,
+                  ),
+                  clipBehavior: Clip.antiAlias,
+                  decoration: const BoxDecoration(
+                    color: Color.fromARGB(0, 0, 0, 0),
+                    shape: BoxShape.circle,
+                  ),
+                ),
+                ListTile(
+                  onTap: () {
+                    Navigator.pop(context); // Close the drawer
+                    // Navigate to HomeScreen
+                    // Note: HomeScreen is the widget containing _HomeScreenState
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => HomeScreen()),
+                    );
+                  },
+                  leading: const Icon(Icons.home),
+                  title: const Text('Home'),
+                ),
+                ListTile(
+                  onTap: () {},
+                  leading: const Icon(Icons.account_circle_rounded),
+                  title: const Text('Profile'),
+                ),
+                ListTile(
+                  onTap: () {},
+                  leading: const Icon(Icons.bookmark),
+                  title: const Text('Bookmarks'),
+                ),
+                ListTile(
+                  onTap: () {},
+                  leading: const Icon(Icons.settings),
+                  title: const Text('Settings'),
+                ),
+                const Spacer(),
+                DefaultTextStyle(
+                  style: const TextStyle(
+                    fontSize: 12,
+                    color: Colors.white54,
+                  ),
+                  child: Container(
+                    margin: const EdgeInsets.symmetric(
+                      vertical: 16.0,
+                    ),
+                  ),
+                ),
+              ],
+            ),
+          ),
+        ),
+      ),
       child: Scaffold(
+        appBar: AppBar(
+          leading: IconButton(
+            onPressed: _handleMenuButtonPressed,
+            icon: ValueListenableBuilder(
+              valueListenable: _advancedDrawerController,
+              builder: (_, value, __) {
+                return AnimatedSwitcher(
+                  duration: const Duration(milliseconds: 250),
+                  child: Icon(
+                    value.visible ? Icons.clear : Icons.menu,
+                    key: ValueKey<bool>(value.visible),
+                  ),
+                );
+              },
+            ),
+          ),
+        ),
         body: SingleChildScrollView(
           child: Column(
             children: [
@@ -103,7 +201,7 @@ class _HomeScreenState extends State<HomeScreen> {
                               role: StaticText.softwareEngineer,
                               salary: '\$180,000/year',
                               location: StaticText.california,
-                              color: ColorStyles.defaultMainColor,
+                              color: Color.fromRGBO(53, 104, 153, 1),
                               logo: Assets.facebookSvg,
                             ),
                           );
@@ -151,13 +249,15 @@ class _HomeScreenState extends State<HomeScreen> {
                     ),
                   ],
                 ),
-
-                // POPULAR JOBS CARD
               ),
             ],
           ),
         ),
       ),
     );
+  }
+
+  void _handleMenuButtonPressed() {
+    _advancedDrawerController.showDrawer();
   }
 }
